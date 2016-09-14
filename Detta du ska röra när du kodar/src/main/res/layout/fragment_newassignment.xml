@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nytt uppdrag"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/title"
+                android:hint="Titel"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:imeOptions="actionNext" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Prioritet"
+                    android:id="@+id/prio"
+                    android:layout_gravity="bottom" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/prioSpinner"
+                    android:layout_gravity="center_horizontal"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="20px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kategori"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="bottom" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categorySpinner"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20px" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/location"
+                android:text="@string/location"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:imeOptions="actionNext" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/longitude"
+                    android:hint="Longitude"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latitude"
+                    android:hint="Latitude"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/description"
+                android:hint="Beskrivning"
+                android:ems="10"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:imeOptions="actionNext"/>
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Lägg till foto"
+                android:id="@+id/photo"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="20px"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="30px"
+                android:layout_marginRight="20px" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/responsible"
+                android:inputType="textPersonName"
+                android:hint="Ansvariga"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:imeOptions="actionNext"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Skapad av"
+                android:ems="10"
+                android:id="@+id/createdBy"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:imeOptions="actionNext" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skapa uppdrag"
+                android:id="@+id/save"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:enabled="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

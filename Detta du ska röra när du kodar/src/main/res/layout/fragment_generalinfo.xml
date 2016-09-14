@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cdde7b"
+    android:weightSum="1"
+    android:clickable="false"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lägg till generell information"
+        android:id="@+id/generalHeader"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="22dp" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/generalTextfield"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_weight="0.27"
+        android:layout_marginTop="30dp"
+        android:text="Skriv här..."
+        android:visibility="visible"
+        android:textColorHint="#9a9a9a"
+        android:textSize="15dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum"
+        android:id="@+id/dateText"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="333dp"
+        android:layout_height="25dp"
+        android:id="@+id/dateTextField"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:text="ÅÅÅÅ-MM-DD"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="Skicka"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#adadad"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+</LinearLayout>

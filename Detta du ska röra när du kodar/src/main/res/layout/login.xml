@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginID"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center|center_vertical"
+    android:background="@drawable/camo"
+    android:scaleType = "centerCrop"
+    >
+    <TextView
+        android:id="@+id/tv0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Login "
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30px" />
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="20sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Username:"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px" />
+    <EditText
+        android:text=""
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:textSize="26sp"
+        android:background="#ffffff"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="10px">
+    </EditText>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="Password:"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="30px" />
+    <EditText
+        android:text=""
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:password="true"
+        android:textSize="26sp"
+        android:singleLine="true"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="10px"
+        android:layout_marginRight="30px">
+    </EditText>
+    <Button
+        android:textColor="#FFFFFF"
+        android:text="Login"
+        android:id="@+id/Button01"
+        android:layout_width="fill_parent"
+        android:onClick="buttonClick"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="30px">
+    </Button>
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+</LinearLayout>
